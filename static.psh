@@ -1,0 +1,7 @@
+//static geometry pixel shader
+
+ps.2.0
+dcl v0
+
+//write vertex colour
+mov oC0, v0

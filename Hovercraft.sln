@@ -1,0 +1,37 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Hovercraft", "Hovercraft.vcproj", "{3492E273-151C-4FEA-A4E5-3804C090E1B6}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 2
+		SccProjectName0 = \u0022$/Hovercraft\u0022,\u0020BAAAAAAA
+		SccLocalPath0 = ..\\..\\..\\..\\..\\..\\..
+		SccProvider0 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+		CanCheckoutShared = false
+		SccProjectFilePathRelativizedFromConnection0 = Documents\u0020and\u0020Settings\\Neil.ZIPPY\\My\u0020Documents\\Software\u0020Development\\C++\\Games\u0020Stuff\\Hovercraft\\
+		SolutionUniqueID = {3F4952A4-994F-4DAE-AE30-D2F30624B154}
+		SccProjectUniqueName1 = Hovercraft.vcproj
+		SccLocalPath1 = ..\\..\\..\\..\\..\\..\\..
+		CanCheckoutShared = false
+		SccProjectFilePathRelativizedFromConnection1 = Documents\u0020and\u0020Settings\\Neil.ZIPPY\\My\u0020Documents\\Software\u0020Development\\C++\\Games\u0020Stuff\\Hovercraft\\
+	EndGlobalSection
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{3492E273-151C-4FEA-A4E5-3804C090E1B6}.Debug.ActiveCfg = Debug|Win32
+		{3492E273-151C-4FEA-A4E5-3804C090E1B6}.Debug.Build.0 = Debug|Win32
+		{3492E273-151C-4FEA-A4E5-3804C090E1B6}.Release.ActiveCfg = Release|Win32
+		{3492E273-151C-4FEA-A4E5-3804C090E1B6}.Release.Build.0 = Release|Win32
+		{110FE3E0-9B08-420A-BAF8-06FF3E77EEA1}.Debug.ActiveCfg = Debug|Win32
+		{110FE3E0-9B08-420A-BAF8-06FF3E77EEA1}.Release.ActiveCfg = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		DPBuild = 5
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

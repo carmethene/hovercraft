@@ -1,0 +1,11 @@
+// vehicle pixel shader
+
+ps.2.0
+dcl v0
+
+def c0, 0.6f, 0.6f, 1.0f, 1.0f
+
+//add a material colour
+mul r0, v0, c0
+
+mov oC0, r0

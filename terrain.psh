@@ -1,0 +1,22 @@
+//terrain pixel shader - blends between textures
+
+ps.2.0
+dcl v0	//vertex colour
+dcl t0	//flat terrain texture
+dcl t1	//sloped terrain texture
+dcl t2	//blending weight
+dcl_2d s0
+dcl_2d s1
+
+texld r0, t0, s0
+texld r1, t1, s1
+
+//blend between the two textures
+mov r2, t2
+lrp r8, r2, r0, r1
+
+//factor in vertex colour
+mul r8, r8, v0
+
+//store
+mov oC0, r8

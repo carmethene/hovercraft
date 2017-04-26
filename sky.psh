@@ -1,0 +1,41 @@
+//sky pixel shader - procedural clouds
+
+//c0	cloud colour 1
+//c1	cloud colour 2
+//c2	background coloor
+
+ps.2.0
+
+dcl t0
+dcl t1
+dcl t2
+dcl_2d s0
+
+def c0, 1.0f, 1.0f, 1.0f, 1.0f
+def c1, 1.0f, 0.8f, 0.5f, 1.0f
+def c2, 0.195f, 0.391f, 0.586f, 1.0f
+
+//load texture
+texld r0, t1, s0
+texld r1, t2, s0
+
+//cloud layer 0 tex coord
+mov r2.rgb, t0
+
+//multiply cloud layers by color
+mul r4.rgb, r0.a, c0
+mul r3.rgb, r1.a, c1
+
+//interpolate between layers 0 and 1
+mov r8.a, r0.a
+lrp r0.rgb, r8.a, r4, r3
+
+//create background horizon
+mov r8.y, r2.y
+mov r9, c2
+lrp r2, r8.y, r9, c2
+
+//interpolate between clouds and horizon
+lrp r0, r8.a, r0, r2
+
+mov oC0, r0
